@@ -1,0 +1,3 @@
+git pull &>/dev/null
+export commits=$(git rev-list head --not main | wc -l)
+echo "Commits Ahead: $commits"
